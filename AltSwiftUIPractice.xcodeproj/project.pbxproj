@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46C0FB588D09323A7409824F /* Pods_AltSwiftUIPractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46B890062355AEB4BA7DFE97 /* Pods_AltSwiftUIPractice.framework */; };
+		FF3C36D4254B259D000F0059 /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3C36D3254B259D000F0059 /* ExampleView.swift */; };
 		FF6EDD1D254B02EA00DCB08B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6EDD1C254B02EA00DCB08B /* AppDelegate.swift */; };
 		FF6EDD1F254B02EA00DCB08B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6EDD1E254B02EA00DCB08B /* SceneDelegate.swift */; };
 		FF6EDD21254B02EA00DCB08B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6EDD20254B02EA00DCB08B /* ViewController.swift */; };
@@ -16,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		46B890062355AEB4BA7DFE97 /* Pods_AltSwiftUIPractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AltSwiftUIPractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		577D09E4B2DD092866F1249F /* Pods-AltSwiftUIPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AltSwiftUIPractice.release.xcconfig"; path = "Target Support Files/Pods-AltSwiftUIPractice/Pods-AltSwiftUIPractice.release.xcconfig"; sourceTree = "<group>"; };
+		EC38D5FBAE82B0AD5867B104 /* Pods-AltSwiftUIPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AltSwiftUIPractice.debug.xcconfig"; path = "Target Support Files/Pods-AltSwiftUIPractice/Pods-AltSwiftUIPractice.debug.xcconfig"; sourceTree = "<group>"; };
+		FF3C36D3254B259D000F0059 /* ExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView.swift; sourceTree = "<group>"; };
 		FF6EDD19254B02EA00DCB08B /* AltSwiftUIPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AltSwiftUIPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF6EDD1C254B02EA00DCB08B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF6EDD1E254B02EA00DCB08B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46C0FB588D09323A7409824F /* Pods_AltSwiftUIPractice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E14482BED8541B2F1B3EB970 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46B890062355AEB4BA7DFE97 /* Pods_AltSwiftUIPractice.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F62330B1BC3AAB494999075F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC38D5FBAE82B0AD5867B104 /* Pods-AltSwiftUIPractice.debug.xcconfig */,
+				577D09E4B2DD092866F1249F /* Pods-AltSwiftUIPractice.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FF6EDD10254B02EA00DCB08B = {
 			isa = PBXGroup;
 			children = (
 				FF6EDD1B254B02EA00DCB08B /* AltSwiftUIPractice */,
 				FF6EDD1A254B02EA00DCB08B /* Products */,
+				F62330B1BC3AAB494999075F /* Pods */,
+				E14482BED8541B2F1B3EB970 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				FF6EDD1C254B02EA00DCB08B /* AppDelegate.swift */,
+				FF3C36D3254B259D000F0059 /* ExampleView.swift */,
 				FF6EDD1E254B02EA00DCB08B /* SceneDelegate.swift */,
 				FF6EDD20254B02EA00DCB08B /* ViewController.swift */,
 				FF6EDD22254B02EA00DCB08B /* Main.storyboard */,
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF6EDD2D254B02ED00DCB08B /* Build configuration list for PBXNativeTarget "AltSwiftUIPractice" */;
 			buildPhases = (
+				692B106803D38D859E6ED40F /* [CP] Check Pods Manifest.lock */,
 				FF6EDD15254B02EA00DCB08B /* Sources */,
 				FF6EDD16254B02EA00DCB08B /* Frameworks */,
 				FF6EDD17254B02EA00DCB08B /* Resources */,
+				078EA60236D985053C337424 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +161,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		078EA60236D985053C337424 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AltSwiftUIPractice/Pods-AltSwiftUIPractice-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AltSwiftUIPractice/Pods-AltSwiftUIPractice-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AltSwiftUIPractice/Pods-AltSwiftUIPractice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		692B106803D38D859E6ED40F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AltSwiftUIPractice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FF6EDD15254B02EA00DCB08B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +211,7 @@
 				FF6EDD21254B02EA00DCB08B /* ViewController.swift in Sources */,
 				FF6EDD1D254B02EA00DCB08B /* AppDelegate.swift in Sources */,
 				FF6EDD1F254B02EA00DCB08B /* SceneDelegate.swift in Sources */,
+				FF3C36D4254B259D000F0059 /* ExampleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +355,7 @@
 		};
 		FF6EDD2E254B02ED00DCB08B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC38D5FBAE82B0AD5867B104 /* Pods-AltSwiftUIPractice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -303,6 +376,7 @@
 		};
 		FF6EDD2F254B02ED00DCB08B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 577D09E4B2DD092866F1249F /* Pods-AltSwiftUIPractice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

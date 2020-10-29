@@ -25,6 +25,12 @@ DerivedData/
 ## Obj-C/Swift specific
 *.hmap
 
+## pod
+Pods/
+
+## AltSwiftUI
+AltSwiftUI/
+
 ## App packaging
 *.ipa
 *.dSYM.zip
