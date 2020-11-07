@@ -6,14 +6,27 @@
 //
 
 import UIKit
+import AltSwiftUI
+import protocol AltSwiftUI.ObservableObject
+import class AltSwiftUI.Published
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+struct ExampleView: View {
+    var viewStore = ViewValues()
+    var body: View {
+        Text("yay!")
     }
-
-
 }
+
+#if DEBUG && canImport(SwiftUI)
+import protocol SwiftUI.PreviewProvider
+import protocol AltSwiftUI.View
+import SwiftUI
+
+struct ExampleViewPreview: AltPreviewProvider, PreviewProvider {
+    static var previewView: View {
+        ExampleView()
+    }
+}
+
+#endif
 
